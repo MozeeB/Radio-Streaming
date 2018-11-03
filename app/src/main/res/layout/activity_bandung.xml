@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Roadja">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/buttonPlay5"
+            android:src="@drawable/bandung" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewRadioUrl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="69dp"
+                android:text="Radio Url"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonPlay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar5"
+                android:layout_alignLeft="@+id/progressBar5"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="59dp"
+                android:background="@drawable/capsule"
+                android:text="Play"
+                android:textColor="#ffffff" />
+
+            <ProgressBar
+                android:id="@+id/progressBar5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRadioUrl5"
+                android:layout_alignLeft="@+id/textViewRadioUrl5"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="0dp"
+                android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                android:indeterminateOnly="false"
+                android:maxHeight="20dip"
+                android:minHeight="20dip"
+                android:progressDrawable="@android:drawable/progress_horizontal" />
+
+            <Button
+                android:id="@+id/buttonStop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/buttonPlay5"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/buttonPlay5"
+                android:layout_marginLeft="53dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/buttonPlay5"
+                android:background="@drawable/capsule"
+                android:text="Stop" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
